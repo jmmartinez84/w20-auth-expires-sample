@@ -1,0 +1,29 @@
+{
+    "node_modules/w20/w20-core.w20.json": {
+      "modules": {
+        "application": {
+          "id": "auth-expires-example",
+          "home": "/demo/hello"
+        },
+        "culture": {
+          "available": [
+            "en-US",
+            "fr-FR"
+          ],
+          "default": "en-US"
+        },
+        "security": {
+            "autoLogin": true,
+            "redirectAfterLogin": "/auth-expires-example/hello",
+            "redirectAfterLogout": "/auth-expires-example/bye"
+        }
+      }
+    },
+    "node_modules/w20-bootstrap-3/w20-bootstrap-3.w20.json": {},
+    "node_modules/w20-business-theme/w20-business-theme.w20.json": {},
+    "auth-expires-example/auth-expires-example.w20.json": {
+        "modules": {
+            "main": {}
+        }
+    }
+}

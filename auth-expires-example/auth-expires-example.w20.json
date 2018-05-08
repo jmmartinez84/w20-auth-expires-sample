@@ -1,0 +1,28 @@
+{
+    "id": "auth-expires-example",
+    "name": "W20 auth expires example",
+    "modules": {
+      "main": "{auth-expires-example}/modules/main"
+    },
+    "i18n": {
+      "en": [ "{auth-expires-example}/i18n/messages-en.json"],
+      "fr": [ "{auth-expires-example}/i18n/messages-fr.json"]
+    },
+    "routes": {
+      "hello": {
+        "template": "<div class=\"container\"><h1>Hello World!</h1></div>",
+        "hidden": true
+      },
+      "bye": {
+        "template": "<div class=\"container\"><h1>bye!</h1></div>",
+        "hidden": true
+      }
+    },
+        "security": {
+            "provider": "BasicAuthentication",
+            "config": {
+                "authentication": "/security/login",
+                "authorizations": "/security/login"
+            }
+        }
+  }
